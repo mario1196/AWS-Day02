@@ -10,7 +10,7 @@ app.use(express.static('public'))
 
 app.get('/', async (req, res) => {
   const notes = await database.getNotes()
-  res.render('index.ejs', {pokeNotes: notes})
+  res.render('index.ejs', {notes: notes})
 })
 
 app.post('/createNote', async (req, res) => {
