@@ -3,3 +3,8 @@
     margin-bottom: 5px;
     background-color: lightgray;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
